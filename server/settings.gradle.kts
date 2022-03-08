@@ -1,0 +1,1 @@
+rootProject.name = "me.amefurikozo.chat-app.server"
