@@ -6,4 +6,6 @@
  * *********************************************************************************************
  */
 
-rootProject.name = "me.amefurikozo.chat_app.server"
+package me.amefurikozo.chat_app.server.feature.room.domain.model
+
+class MemberAlreadyExistsException(message: String) : Exception(message)

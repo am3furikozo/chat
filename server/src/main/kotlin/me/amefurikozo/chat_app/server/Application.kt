@@ -6,4 +6,19 @@
  * *********************************************************************************************
  */
 
-rootProject.name = "me.amefurikozo.chat_app.server"
+package me.amefurikozo.chat_app.server
+
+import io.ktor.server.engine.*
+import io.ktor.server.netty.*
+import me.amefurikozo.chat_app.server.plugins.*
+
+fun main() {
+  embeddedServer(Netty, port = 8082) {
+    configureIOC()
+    configureSockets()
+    configureRouting()
+    configureSecurity()
+    configureMonitoring()
+    configureSerialization()
+  }.start(wait = true)
+}

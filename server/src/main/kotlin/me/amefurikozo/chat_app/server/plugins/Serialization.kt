@@ -6,4 +6,16 @@
  * *********************************************************************************************
  */
 
-rootProject.name = "me.amefurikozo.chat_app.server"
+package me.amefurikozo.chat_app.server.plugins
+
+import io.ktor.application.*
+import io.ktor.features.*
+import io.ktor.request.*
+import io.ktor.serialization.*
+import org.slf4j.event.*
+
+fun Application.configureSerialization() {
+    install(ContentNegotiation) {
+        json()
+    }
+}

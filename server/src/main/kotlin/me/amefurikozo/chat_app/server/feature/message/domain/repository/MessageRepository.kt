@@ -6,4 +6,12 @@
  * *********************************************************************************************
  */
 
-rootProject.name = "me.amefurikozo.chat_app.server"
+package me.amefurikozo.chat_app.server.feature.message.domain.repository
+
+import me.amefurikozo.chat_app.server.feature.message.domain.model.Message
+
+interface MessageRepository {
+  suspend fun getAll(): List<Message>
+  suspend fun save(message: Message)
+  suspend fun getById(id: String): Message?
+}

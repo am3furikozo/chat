@@ -6,4 +6,12 @@
  * *********************************************************************************************
  */
 
-rootProject.name = "me.amefurikozo.chat_app.server"
+package me.amefurikozo.chat_app.server.feature.message.data.source
+
+import me.amefurikozo.chat_app.server.feature.message.domain.model.Message
+
+interface MessageDao {
+  suspend fun getAll(): List<Message>
+  suspend fun insert(message: Message)
+  suspend fun getById(id: String): Message?
+}

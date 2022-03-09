@@ -6,4 +6,9 @@
  * *********************************************************************************************
  */
 
-rootProject.name = "me.amefurikozo.chat_app.server"
+package me.amefurikozo.chat_app.server.feature.session.domain.model
+
+data class ChatSession(
+  val username: String,
+  val sessionId: String
+)

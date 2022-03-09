@@ -6,4 +6,13 @@
  * *********************************************************************************************
  */
 
-rootProject.name = "me.amefurikozo.chat_app.server"
+package me.amefurikozo.chat_app.server.feature.message.presentation
+
+import me.amefurikozo.chat_app.server.feature.message.data.dto.MessageDto
+import me.amefurikozo.chat_app.server.feature.message.domain.repository.MessageRepository
+
+class MessageController(private val messageRepository: MessageRepository) {
+  suspend fun getAll(): List<MessageDto> {
+    return messageRepository.getAll().map { it.toDto() }
+  }
+}

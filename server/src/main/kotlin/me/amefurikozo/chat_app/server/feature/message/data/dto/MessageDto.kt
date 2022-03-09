@@ -6,4 +6,14 @@
  * *********************************************************************************************
  */
 
-rootProject.name = "me.amefurikozo.chat_app.server"
+package me.amefurikozo.chat_app.server.feature.message.data.dto
+
+import kotlinx.serialization.Serializable
+
+@Serializable
+data class MessageDto(
+  val id: String,
+  val text: String,
+  val username: String,
+  val timestamp: Long
+)

@@ -6,4 +6,12 @@
  * *********************************************************************************************
  */
 
-rootProject.name = "me.amefurikozo.chat_app.server"
+package me.amefurikozo.chat_app.server.feature.room.domain.model
+
+import io.ktor.http.cio.websocket.*
+
+data class Member(
+  val username: String,
+  val sessionId: String,
+  val socket: WebSocketSession
+)

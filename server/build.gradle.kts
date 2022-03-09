@@ -1,3 +1,11 @@
+/*
+ * *********************************************************************************************
+ * Copyright (c) 2022.
+ * This file is part of Chat project which is released under GNU General Public License v3.0.
+ * See LICENSE file or go to https://www.gnu.org/licenses/gpl-3.0.en.html for full license details.
+ * *********************************************************************************************
+ */
+
 val ktorVersion: String by project
 val kotlinVersion: String by project
 val logbackVersion: String by project
@@ -10,10 +18,10 @@ plugins {
     id("org.jetbrains.kotlin.plugin.serialization") version "1.6.0"
 }
 
-group = "me.amefurikozo"
+group = "me.amefurikozo.chat_app.server"
 version = "0.0.1"
 application {
-    mainClass.set("io.ktor.server.netty.EngineMain")
+    mainClass.set("me.amefurikozo.chat_app.server.ApplicationKt")
 }
 
 repositories {

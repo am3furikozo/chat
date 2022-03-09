@@ -6,4 +6,12 @@
  * *********************************************************************************************
  */
 
-rootProject.name = "me.amefurikozo.chat_app.server"
+package me.amefurikozo.chat_app.server.plugins
+
+import io.ktor.application.*
+import me.amefurikozo.chat_app.server.di.appModule
+import org.koin.ktor.ext.modules
+
+fun Application.configureIOC() {
+  modules(appModule)
+}
