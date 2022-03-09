@@ -1,0 +1,19 @@
+<!--
+  ~ **********************************************************************************************
+  ~ Copyright (c) 2022.
+  ~ This file is part of Chat project which is released under GNU General Public License v3.0.
+  ~ See LICENSE file or go to https://www.gnu.org/licenses/gpl-3.0.en.html for full license details.
+  ~ **********************************************************************************************
+  -->
+
+<resources>
+  <string name="app_name">Chat</string>
+  <string name="chat_chat_service_join_session_connection_not_established_message">
+    Couldn\'t establish connection
+  </string>
+  <string name="unknown_exception_message">Unknown exception</string>
+  <string name="login_screen_username_placeholder">Enter a username…</string>
+  <string name="login_screen_join_btn_text">Join</string>
+  <string name="chat_component_input_send_btn_description">Send</string>
+  <string name="chat_component_input_text_placeholder">Enter a message…</string>
+</resources>
